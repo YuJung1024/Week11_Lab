@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		var number;
+		var rand= Math.floor((Math.random()*10)+1);
+		number=window.prompt("Please input a number from 1 to 10.");
+		while(number>0 && number<=10){
+			if(number!=rand){
+				alert("You enter a wrong number,please enter again!");
+				number=window.prompt("Guess a number");
+			}else{
+				alert("You enter a right number!");
+				break;
+			}		
+		}
+	</script>
+	<label>重整請按F5.</label>
+</body>
+</html>
